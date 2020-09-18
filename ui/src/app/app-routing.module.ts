@@ -5,10 +5,12 @@ import { TaskCreateComponent } from './comp/tasks/task-create/task-create.compon
 import { TaskListComponent } from './comp/tasks/task-list/task-list.component';
 import { LoginComponent } from './comp/auth/login/login.component';
 
-
 const routes: Routes = [
   {
     path: '', component: TaskListComponent
+  },
+  {
+    path: 'home', component: TaskListComponent
   },
   {
     path: 'login', component: LoginComponent

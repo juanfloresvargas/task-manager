@@ -1,5 +1,7 @@
-<div>
-  <app-task-create></app-task-create>
-
-  <app-task-list></app-task-list>
+<div style="padding: 2rem;">
+  <div *ngIf="isAuthenticated" style="display: flex; flex-direction: row-reverse;">
+    <button mat-flat-button color="primary" (click)="logout()">Logout</button>
+    <div style="padding-top: 0.5rem; padding-right: 1rem;">{{userInfo?.username}}</div>
+  </div>
+  <router-outlet></router-outlet>
 </div>
